@@ -9,6 +9,7 @@ import Services from './Services';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom';
 import ParentChild from './ParentChild';
+import Market from './Market';
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
           <Nav.Link as={Link} to="/about">About</Nav.Link>
           <Nav.Link as={Link} to="/services">Services</Nav.Link>
           <Nav.Link as={Link} to="/parentChild">ParentChild</Nav.Link>
+          <Nav.Link as={Link} to="/market">Market</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
@@ -38,6 +40,7 @@ function App() {
       <Route path='/About'element={<About/>}></Route>
       <Route path='/Services'element={<Services/>}></Route>
       <Route path='/ParentChild'element={<ParentChild/>}></Route>
+      <Route path='/Market'element={<Market/>}></Route>
 
     </Routes>
       </Router>
